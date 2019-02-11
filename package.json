@@ -1,0 +1,39 @@
+{
+  "name": "phina-ts-seed",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js --mode production",
+    "watch:server": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot",
+    "webpack": "node_modules/webpack/bin/webpack.js --mode development --watch",
+    "w": "npm-run-all -p watch:*"
+  },
+  "dependencies": {
+    "phina.js": "git+https://github.com/phinajs/phina.js.git#develop",
+    "postcss-loader": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4",
+    "prettier-stylelint": "^0.4.2",
+    "sass-lint": "^1.12.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-semistandard": "^7.0.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

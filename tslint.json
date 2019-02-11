@@ -1,0 +1,24 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-config-semistandard", "tslint-config-prettier"],
+  "jsRules": {},
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "semi": true,
+        "singleQuote": true
+      }
+    ],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore"],
+    "no-default-export": true,
+    "import-name": false,
+    "interface-name": false,
+    "ordered-imports": true,
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "no-empty-interface": false,
+    "jsx-no-lambda": false
+  }
+}

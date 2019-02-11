@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+        'header header' 50px
+        'aside  main' 1fr
+        'aside  footer' 50px /
+        200px 1fr;
+
+    header {
+        grid-area: header;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
